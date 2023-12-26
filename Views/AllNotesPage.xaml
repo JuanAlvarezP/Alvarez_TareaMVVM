@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:Alvarez_AppApuntes.ViewModels"
              x:Class="Alvarez_AppApuntes.Views.AllNotesPage"
-             Title="Todas las notas">
+             Title="Todas las notas"
+             NavigatedTo="ContentPage_NavigatedTo">
 
     <ContentPage.BindingContext>
         <viewModels:NotesViewModel />

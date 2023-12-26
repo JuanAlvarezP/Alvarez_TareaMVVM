@@ -25,9 +25,9 @@ namespace Alvarez_AppApuntes.ViewModels
             }
         }
 
-        public DateTime Date => _note.Fecha_Alvarez;
+        public DateTime JA_Fecha => _note.Fecha_Alvarez;
 
-        public string Identifier => _note.Filename_Alvarez;
+        public string JA_Identifier => _note.Filename_Alvarez;
 
         public ICommand SaveCommand { get; private set; }
         public ICommand DeleteCommand { get; private set; }
@@ -77,7 +77,7 @@ namespace Alvarez_AppApuntes.ViewModels
         private void RefreshProperties()
         {
             OnPropertyChanged(nameof(Text));
-            OnPropertyChanged(nameof(Date));
+            OnPropertyChanged(nameof(JA_Fecha));
         }
     }
 }

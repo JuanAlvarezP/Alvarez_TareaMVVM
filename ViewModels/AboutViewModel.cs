@@ -10,10 +10,10 @@ namespace Alvarez_AppApuntes.ViewModels
 {
     internal class AboutViewModel
     {
-        public string Title => AppInfo.Name;
-        public string Version => AppInfo.VersionString;
-        public string MoreInfoUrl => "https://aka.ms/maui";
-        public string Message => "This app is written in XAML and C# with .NET MAUI.";
+        public string JA_Title => AppInfo.Name;
+        public string JA_Version => AppInfo.VersionString;
+        public string JA_MoreInfoUrl => "https://aka.ms/maui";
+        public string JA_Message => "This app is written in XAML and C# with .NET MAUI.";
         public ICommand ShowMoreInfoCommand { get; }
 
         public AboutViewModel()
@@ -22,6 +22,6 @@ namespace Alvarez_AppApuntes.ViewModels
         }
 
         async Task ShowMoreInfo() =>
-            await Launcher.Default.OpenAsync(MoreInfoUrl);
+            await Launcher.Default.OpenAsync(JA_MoreInfoUrl);
     }
 }
